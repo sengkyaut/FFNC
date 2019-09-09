@@ -117,7 +117,7 @@ def cbrowse_folder(*agrs):
     global tempf
     global blank
     tempf = filedialog.askdirectory(parent=win, title="directory")
-    if tempdir != '':
+    if tempf != '':
         tree.delete(*tree.get_children())
         tree1.heading(col, text=col.title())
         all_list = os.listdir(tempf)
@@ -159,7 +159,7 @@ def browse_folder(*agrs):
     global tempf
     global blank
     tempf = filedialog.askdirectory(parent=win, title="directory")
-    if tempdir != '':
+    if tempf != '':
         tree.delete(*tree.get_children())
         tree1.heading(col, text=col.title())
         for root, directories, filenames in os.walk(tempf):
