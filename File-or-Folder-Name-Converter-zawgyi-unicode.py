@@ -2,7 +2,7 @@ from tkinter import *
 import tkinter as tk
 import tkinter.font as tkFont
 import tkinter.ttk as ttk
-import os
+import os,re
 from tkinter import filedialog
 from tkinter import Frame, Label
 from tkinter.font import Font, nametofont
